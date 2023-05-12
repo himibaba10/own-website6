@@ -1,0 +1,16 @@
+@forward "globals";
+
+// For Fontawesome
+@forward "../font-awesome/scss/fontawesome.scss";
+@use "../font-awesome/scss/solid.scss";
+@use "../font-awesome/scss/brands.scss";
+
+// For Bootstrap
+@forward "./bootstrap/bootstrap";
+
+// For Font Awesome
+@forward "./fontawesome/index";
+
+// Import components and sections
+@forward "./components";
+@forward "./sections";

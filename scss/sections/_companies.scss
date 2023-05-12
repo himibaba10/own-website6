@@ -1,0 +1,48 @@
+@use "../bootstrap/bootstrap" as *;
+
+.companies-section {
+  &--intro {
+    font-size: 1.625rem;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .companies-logo{
+    &--box{
+        @include media-breakpoint-down(md){
+            width: 30%;
+            height: 3.2rem;
+        }
+        img{
+            height: 2rem;
+            max-width: 100%;
+            width: 100%;
+            &:hover{
+                filter: grayscale(100%);
+            }
+
+            @include media-breakpoint-down(md){
+                height: auto;
+            }
+        }
+    }
+  }
+}
+
+.heading-line::before {
+  content: "";
+  display: block;
+  background: $primary;
+  margin: 0 auto;
+  width: 10rem;
+  height: 0.1rem;
+}
+
+.heading-line::after {
+  content: "";
+  display: block;
+  background: $primary;
+  margin: 0 auto;
+  width: 2rem;
+  height: 0.6rem;
+}

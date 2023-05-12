@@ -1,0 +1,55 @@
+@use "../bootstrap/bootstrap" as *;
+@use "../components/mixins" as *;
+
+.btn-main{
+    font-weight: 600;
+    padding: 0.5rem 0.4125rem 0.5rem 1rem;
+    width:205px;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba($white, 0.6);
+    transition: all 0.2s linear;
+    background-color: $white;
+
+    &:hover{
+        @include gradient;
+        color: $white;
+        .icon-wrapper{
+            background-color: rgba($black, 0.3);
+        }
+    }
+
+    .icon-wrapper{
+        width: 2.5rem;
+        height: 2.5rem;
+        background-color: $primary;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+
+        .bi{
+            color: $white;
+            &-telephone-fill{
+                font-size: 1.1rem;
+            }
+            &-arrow-right-short{
+                font-size: 2rem;
+                transform: translate(-1px, -1px);
+            }
+            
+        }
+    }
+
+    @include media-breakpoint-down(sm){
+        display: none;
+    }
+}
+
+.single-service__btn{
+    border: 0.1rem solid $primary;
+}

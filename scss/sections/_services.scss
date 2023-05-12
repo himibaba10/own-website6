@@ -1,0 +1,34 @@
+@use "../components/mixins" as *;
+@use "../bootstrap/bootstrap" as *;
+
+.services-section{
+
+    .border-end{
+        @include media-breakpoint-down(md){
+            border-right: none !important;
+        }
+    }
+
+    .single-service{
+
+        .col > .bi{
+            font-size: 2.5rem;
+            color: $primary;
+        }
+
+        &__title{
+            font-size: 2rem;
+            @include gradient;
+            @include font-poppins;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            @include media-breakpoint-down(md){
+                font-size: 1.7rem;
+            }
+        }
+
+        &__description{
+            font-size: 1.1rem;
+        }
+    }
+}

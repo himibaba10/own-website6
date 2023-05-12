@@ -1,0 +1,12 @@
+@use "../components/mixins" as *;
+@use "../bootstrap/bootstrap" as *;
+.testimonial-section{
+    @include gradient;
+
+    &__heading{
+
+        p{
+            color: rgba($white, 0.6);
+        }
+    }
+}
