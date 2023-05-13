@@ -14,3 +14,13 @@
     font-size: 3rem;
   }
 }
+
+.heading-3 {
+  font-size: 3rem;
+  font-weight: 700;
+  @include font-poppins;
+
+  @include media-breakpoint-down(md) {
+    font-size: 2.5rem;
+  }
+}

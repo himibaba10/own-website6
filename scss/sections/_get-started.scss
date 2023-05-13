@@ -1,0 +1,30 @@
+@use "../bootstrap/bootstrap" as *;
+@use "../components/mixins" as *;
+
+.get-started-section {
+  background-color: $gray-200;
+
+  &__left {
+    @include gradient;
+  }
+
+  &__right {
+    h3 {
+      @include gradient;
+      @include font-poppins;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  &__form{
+
+    input, textarea{
+        padding: .8rem .625rem;
+
+        &::placeholder{
+            font-size: 1.2rem;
+        }
+    }
+  }
+}

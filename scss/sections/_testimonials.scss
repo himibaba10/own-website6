@@ -1,12 +1,65 @@
 @use "../components/mixins" as *;
 @use "../bootstrap/bootstrap" as *;
-.testimonial-section{
-    @include gradient;
+.testimonial-section {
+  @include gradient;
 
-    &__heading{
-
-        p{
-            color: rgba($white, 0.6);
-        }
+  &__heading {
+    p {
+      color: rgba($white, 0.6);
     }
+  }
+
+  .single-testimonial-card {
+    background: rgba($white, 0.8);
+    padding: 2rem 3rem;
+    border-radius: 0.625rem;
+    .description {
+      font-size: 1.2rem;
+
+      .bi-quote {
+        font-size: 2rem;
+        color: $primary;
+      }
+    }
+
+    .rating {
+      color: $primary;
+    }
+  }
+
+  .single-testimonial-client {
+    margin-top: -2rem;
+    .client-img {
+      img {
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+        border: 0.3125rem solid $primary;
+      }
+    }
+
+    .client-detail {
+      .name {
+        @include font-poppins;
+      }
+    }
+  }
+
+  .carousel-btn {
+    button {
+      background: transparent;
+      border: 0.1rem solid white;
+      width: 2.6rem;
+
+      span {
+        transform: translateY(2px);
+        width: 1.5rem;
+        height: 1.7rem;
+      }
+
+      &:focus{
+        box-shadow: 0 0 4px $white;
+      }
+    }
+  }
 }

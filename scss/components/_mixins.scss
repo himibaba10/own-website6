@@ -9,3 +9,11 @@
 @mixin font-poppins{
     font-family: 'Poppins', sans-serif;
 }
+
+@mixin absolute-center{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
